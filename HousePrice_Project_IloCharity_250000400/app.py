@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Load Trained Pipeline (robust)
 # ---------------------------
 script_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(script_dir, "Model", "house_price_pipeline.pkl")
+model_path = os.path.join(script_dir, "Model", "house_price.pkl")
 
 try:
     with open(model_path, "rb") as f:
